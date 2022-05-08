@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+  --primarycolor: hsl(217, 54%, 11%);
+  --secondarycolor: hsl(216, 50%, 16%);
+  --Verydarkblue: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+  --Softblue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --boxshadow: hsl(217, 55%, 10%);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0%;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--primarycolor);
+  font-family: "Outfit", sans-serif;
+
+  display: grid;
+  place-content: center;
+}
+
+a,
+a:visited,
+a:active {
+  color: var(--Softblue);
+}
+
+p {
+  font-size: 1.125rem;
+}
+
+/* style */
+
+.nftcard {
+  padding: 1.75rem;
+  background-color: var(--secondarycolor);
+  width: 350px;
+  border-radius: 4%;
+  -webkit-box-shadow: 0rem 2rem 0rem 1rem var(--boxshadow);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  margin-bottom: 1.75rem;
+}
+
+.cardimg {
+  border-radius: 4%;
+}
+
+.eyesvg {
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  right: 0%;
+  left: 0%;
+  padding: 123px;
+  border-radius: 3%;
+}
+
+.eyesvg {
+  cursor: pointer;
+  background-color: hsla(178, 100%, 50%, 0.5);
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+
+.eyesvg:hover,
+:focus {
+  opacity: 1;
+}
+
+p {
+  margin-top: 1.75rem;
+  color: var(--Softblue);
+  font-weight: 300;
+}
+
+h3 {
+  color: var(--White);
+  font-weight: 600;
+}
+
+h3:hover {
+  color: var(--Cyan);
+  cursor: pointer;
+}
+
+.svgtext {
+  display: flex;
+  justify-content: space-between;
+  justify-items: last baseline;
+
+  margin-bottom: 1.75rem;
+}
+
+.svgtext > p:first-of-type {
+  color: var(--Cyan);
+}
+
+hr {
+  color: var(--Verydarkblue);
+}
+
+.profile {
+  margin-top: 1rem;
+
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.jules {
+  width: 2rem;
+  outline: 1px var(--White) solid;
+  border-radius: 50%;
+}
+
+span {
+  font-size: 1.125rem;
+  color: var(--Softblue);
+}
+
+.footertext {
+  font-size: 1.125rem;
+  color: var(--White);
+}
+
+.footertext:hover {
+  color: var(--Cyan);
+  cursor: pointer;
+}
+
+.attribution {
+  color: var(--White);
+}
